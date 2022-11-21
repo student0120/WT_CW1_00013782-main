@@ -1,0 +1,581 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#products-header{
+    text-align: center;
+    display: flex;
+    padding: 2rem 8rem;
+    justify-content: center;
+    flex-direction: row;
+    background-image: url(../imagees/wepik-photo-mode-20221015-114948.png);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 82vh;
+    background-color: rgba(0, 0, 0, 0.393);
+    background-blend-mode: darken;
+    transition: .5s;
+    animation: header 1s forwards;
+}
+
+.product-content{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 50px;
+    transition: .5s;
+}
+.product-content:hover{
+    backdrop-filter: blur(2px);
+}
+
+.product-content h3{
+    font-size: 80px;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.104);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    transition: .5s;
+    -webkit-text-stroke: 2px;
+}
+.product-content h3:hover{
+    transform: scale(1.1);
+    color: white;
+}
+.btn-product{
+    padding: 1rem 3rem;
+    background-color: rgba(0, 0, 0, 0.326);
+    transition: .5s;
+    border: none;
+}
+.btn-product a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: fantasy;
+}
+.btn-product:hover{
+    transform: scale(1.1);
+}
+
+#sign-in{
+    display: flex;
+    flex-direction: row;
+    padding: 5rem 4rem;
+    margin: 4rem 0;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: .5px solid gray;
+    
+}
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.signup h3{
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+}
+.signup p{
+    padding: 10px 0;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+
+}
+
+#product3-section{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5rem 4rem;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid gray;
+}
+
+.blogs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.blogs-in{
+    padding: 1rem 2rem;
+    width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.blog1{
+    background-image: url(../imagees/top\ selling\ \(1\).jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    margin: .5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.336);
+    background-blend-mode: darken;
+    transition: .1s;
+}
+.blog1:hover{
+    box-shadow: 0px 0px 10px blue;
+}
+.blog2{
+    background-image: url(../imagees/top\ selling\ \(2\).jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    margin: .5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.336);
+    background-blend-mode: darken;
+    transition: .5s;
+}
+.blog2:hover{
+    box-shadow: 0px 0px 10px blue;
+}
+.blog3{
+    background-image: url(../imagees/top\ selling\ \(3\).jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    margin: .5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.336);
+    background-blend-mode: darken;
+}
+.blog3:hover{
+    box-shadow: 0px 0px 10px blue;
+}
+.blog4{
+    background-image: url(../imagees/top\ selling\ \(7\).jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    margin: .5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.336);
+    background-blend-mode: darken;
+}
+.blog4:hover{
+    box-shadow: 0px 0px 10px blue;
+}
+.blog5{
+    background-image: url(../imagees/Affliction\ Mens\ Shirt\ Xl\ Brand\ Original\ With\ Tags\ Limited\ Edition.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 500px;
+    height: 650px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.336);
+    background-blend-mode: darken;
+    margin: 1rem 0;
+    
+}
+.blog5:hover{
+    box-shadow: 0px 0px 10px blue;
+}
+.blog-heading{
+    font-size: 40px;
+    color: white;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.blog-link{
+    padding: 10px 30px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color: rgb(0, 81, 255);
+    text-decoration: none;
+    transition: .3s;
+}
+.blog-link:hover{
+    background-color: rgba(0, 0, 0, 0.286);
+    color: white;
+}
+
+#popular-products{
+    padding: 5rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.populars{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.p-contents{
+    margin: 8px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 5px;
+    transition: .5s;
+    
+}
+.p-contents img{
+    width: 300px;
+    height: 400px;
+    transition: .5s;
+    box-shadow: 0px 0px 30px 5px lightgray;
+}
+.p-contents img:hover{
+    height: 450px;
+}
+.p-contents h3{
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    padding: 1rem 0;
+}
+.p-contents a{
+    padding: 10px 0;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    transition: .2s;
+}
+.p-contents a:hover{
+    color: whitesmoke;
+    font-weight: 600;
+    background-color: rgb(43, 110, 255);
+}
+.view{
+    padding: 5rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+#advertisement{
+    padding: 5rem 2rem 0 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.ad{
+    width: 100%;
+    height: 800px;
+    background-image: url(../imagees/noir.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.099);
+    background-blend-mode: darken;
+    padding-top: 10rem;
+}
+
+.ad h4{
+    font-size: 40px;
+    font-family: fantasy;
+    font-weight: 500;
+    color: black;
+    width: 800px;
+    transition: .3s;
+}
+.ad h4:hover{
+    transform: scale(1.1);
+}
+
+
+#perfume{
+    padding: 2rem 4rem 10rem 4rem;
+    display: flex;
+    justify-content: center;
+}
+.perfumes{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+
+
+.perfume-contents{
+    margin: 10px;
+    transition: .2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.perfume-contents:hover{
+    box-shadow: 0px 0px 2px 1px black;
+}
+.cost{
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.cost h3{
+    font-size: 15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: 	rgba(145, 123, 0, 0.733);
+}
+.cost a{
+    text-decoration: none;
+    color: rgb(0, 68, 170);
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.perfume-contents img{
+    width: 300px;
+    height: 400px;
+}
+
+
+@media only screen and (max-width: 1024px){
+    #products-header{
+        padding: 2rem;
+    }
+    #product3-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    #popular-products{
+        padding: 1rem;
+    }
+   .populars{
+    flex-wrap: wrap;
+   }
+   #perfume{
+    padding: 1rem;
+   }
+   .perfumes{
+    justify-content: center;
+    flex-wrap: wrap;
+   }
+   .ad{
+    width: 100%;
+   }
+    .product-content h3{
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    .ad{
+       padding-top: 0;
+    }
+
+    .blogs{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .blogs-in{
+        padding: 10px;
+        width: 100%;
+        display: flex;
+        margin: 0;
+        justify-content: center;
+    }
+
+   
+
+    .blog5{
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 500px;
+    }
+    .style{
+        display: block;
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 768px){
+
+    #sign-in{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .product-content h3{
+        color: white;
+        font-size: 50px;
+        font-weight: 400;
+    }
+    #product3-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .blogs{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+    }
+    .blogs-in{
+        display: flex;
+        flex-direction: column;
+    }
+  .blog1{
+        width: 100%;
+    }
+    .blog2{
+        width: 100%;
+    }
+    .blog3{
+        width: 100%;
+    }
+    .blog4{
+        width: 100%;
+    }
+    .blog5{
+        display: none;
+    }
+
+    .ad h4{
+        width: 300px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .reveal{
+        transform: translateY(90px);
+    }
+
+
+
+}
+
+
+@media only screen and (max-width: 425px){
+    #products-header{
+        padding: 1rem;
+    }
+    #product3-section{
+        padding: 1rem;
+    }
+
+    .blogs-in{
+        padding: 0;
+    }
+    .blog1{
+        margin: 1rem 0;
+    }
+    .blog2{
+        margin: 1rem 0;
+    }
+    .blog3{
+        margin: 1rem 0;
+    }
+    .blog4{
+        margin: 1rem 0;
+    }
+    #popular-products{
+        padding: 1rem;
+    }
+    .p-contents{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+    .p-contents img{
+        width: 100%;
+    }
+
+    #perfume{
+        padding: 1rem;
+    }
+    .perfume-contents{
+        margin: 0;
+    }
+
+    #advertisement{
+        padding: 0;
+        width: 100%;
+        justify-content: center;
+    }
+    .ad{
+        height: 500px;
+        margin: 0;
+    }
+    .ad h4{
+        color: rgba(0, 0, 0, 0.532);
+        font-size: 30px;
+        width: 200px;
+    }
+
+    .btn{
+        width: 100%;
+    }
+    
+
+    
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
